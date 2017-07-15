@@ -50,8 +50,8 @@ buildscript {
 }
 
 uploadArchives {
-    def releaseArtifactoryUrl = project.getSecuredProperty("releaseArtifactoryUrl")
-    def snapshotArtifactoryUrl = project.getSecuredProperty("snapshotArtifactoryUrl")
+    def releaseArtifactoryUrl = project.getSecuredProperty("artifactoryReleaseUrl")
+    def snapshotArtifactoryUrl = project.getSecuredProperty("artifactorySnapshotUrl")
     def artifactoryUser = project.getSecuredProperty("artifactoryUser")
     def artifactoryPassword = project.getSecuredProperty("artifactoryPassword")
 
