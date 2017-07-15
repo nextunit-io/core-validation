@@ -1,0 +1,29 @@
+def loadSecuredPropertiesInProject() {
+    Properties properties = new Properties()
+
+    fileTree("$project.projectDir").include("*.properties.secure").each{ File file ->
+        def props = new Properties()
+        file.withReader { reader ->
+            props.load(reader)
+        }
+        props.each { k, v ->
+            properties[k] = v
+        }
+    }
+
+    return properties
+}
+
+def getSecuredProperty(String key, Object defaultValue = "") {
+    def value = loadSecuredPropertiesInProject().getProperty(key)
+
+    if (value != null) {
+        return value
+    }
+
+    return defaultValue
+}
+
+ext {
+    getSecuredProperty = this.&getSecuredProperty
+}
