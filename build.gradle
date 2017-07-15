@@ -12,7 +12,7 @@ apply plugin: 'maven'
 apply from:  "gradle/sec.properties.gradle"
 
 group 'io.nextunit.core'
-version '0.0.1'
+version '0.0.1-SNAPSHOT'
 
 jar {
     baseName = 'core-validator'
