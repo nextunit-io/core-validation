@@ -1,8 +1,8 @@
-package io.nextunit.validation.validator;
+package io.nextunit.core.validation.validator;
 
-import io.nextunit.validation.annotation.SecretPassword;
-import io.nextunit.validation.annotation.SecretPasswordConstraint;
-import io.nextunit.validation.annotation.ValidationVariable;
+import io.nextunit.core.validation.annotation.SecretPasswordConstraint;
+import io.nextunit.core.validation.annotation.ValidationVariable;
+import io.nextunit.core.validation.annotation.SecretPassword;
 import org.hibernate.validator.constraintvalidation.HibernateConstraintValidatorContext;
 import org.junit.Assert;
 import org.junit.Before;
@@ -18,8 +18,6 @@ import org.powermock.modules.junit4.PowerMockRunner;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import javax.validation.ConstraintValidatorContext;
-
-import java.util.Arrays;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.times;

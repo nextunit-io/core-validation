@@ -1,4 +1,4 @@
-package io.nextunit.validation.annotation;
+package io.nextunit.core.validation.annotation;
 
 public @interface SecretPasswordConstraint {
     String message();

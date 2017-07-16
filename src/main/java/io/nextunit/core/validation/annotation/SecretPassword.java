@@ -1,6 +1,6 @@
-package io.nextunit.validation.annotation;
+package io.nextunit.core.validation.annotation;
 
-import io.nextunit.validation.validator.SecretPasswordValidator;
+import io.nextunit.core.validation.validator.SecretPasswordValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

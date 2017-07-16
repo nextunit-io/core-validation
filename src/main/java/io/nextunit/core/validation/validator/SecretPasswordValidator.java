@@ -1,7 +1,7 @@
-package io.nextunit.validation.validator;
+package io.nextunit.core.validation.validator;
 
-import io.nextunit.validation.annotation.SecretPassword;
-import io.nextunit.validation.annotation.SecretPasswordConstraint;
+import io.nextunit.core.validation.annotation.SecretPasswordConstraint;
+import io.nextunit.core.validation.annotation.SecretPassword;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hibernate.validator.constraintvalidation.HibernateConstraintValidatorContext;
